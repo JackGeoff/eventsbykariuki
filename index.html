@@ -1,0 +1,392 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Events by Kariuki: Premium luxury event planning services in Kenya. Weddings, corporate events, high-profile celebrations, catering, videography, photography, and full event management.">
+    <meta name="keywords" content="luxury events Kenya, wedding planner Nairobi, corporate events planning, high-profile events, event catering Kenya, videography services, photography services, event decoration, wedding videography, corporate event planning, event logistics, venue sourcing Kenya, entertainment services, floral design events, professional staffing, event security, AV and sound equipment">
+    <meta name="author" content="Events by Kariuki">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Events by Kariuki - Luxury Event Planning Kenya">
+    <meta property="og:description" content="Premier luxury event planning services in Kenya. Weddings, corporate events, videography, catering, and complete event management.">
+    <meta property="og:type" content="business.business">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Events by Kariuki - Luxury Event Planning">
+    <meta name="twitter:description" content="Luxury event planning in Kenya. Weddings, corporate events, videography, photography, catering and more.">
+    <title>Events by Kariuki - Luxury Event Planning in Kenya</title>
+    <!-- SEO Schema Markup -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "EventPlanner",
+        "name": "Events by Kariuki",
+        "url": "https://www.eventsbykariuki.com",
+        "logo": "assets/images/logo.png",
+        "description": "Premium event planning services in Kenya",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Nairobi",
+            "addressRegion": "Nairobi County",
+            "addressCountry": "KE"
+        }
+    }
+    </script>
+    <!-- Fonts (assuming Google Fonts or custom) -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;500&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/animations.css">
+    
+    <!-- GSAP CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+    <!-- Lenis for smooth scroll (lightweight) -->
+    <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js" defer></script>
+</head>
+<body>
+    <header class="top-nav" id="topNav">
+        <div class="nav-left">
+            <div class="logo-container">
+                <img src="assets/img/logo.png" alt="Events by Kariuki Logo" class="logo-img">
+                <a href="#hero" class="logo-text">Events by Kariuki</a>
+            </div>
+        </div>
+        <nav class="nav-right" id="navMenu">
+            <a href="#services" class="nav-link">Services</a>
+            <a href="#authority" class="nav-link">Authority</a>
+            <a href="#event-builder" class="nav-link">Plan Event</a>
+        </nav>
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+    <!-- Preloader -->
+     <div id="preloader" class="preloader">
+        <div class="preloader-content">
+            <img src="assets/img/preloader.gif" alt="Events by Kariuki Logo" class="preloader-logo">
+            <p class="preloader-text">You don’t plan events.<br>You create moments remembered forever.</p>
+        </div>
+    </div> 
+
+    <!-- Floating WhatsApp Button (icon) -->
+    <a href="https://wa.me/+254123456789?text=I'd%20like%20to%20inquire%20about%20an%20event." class="whatsapp-float" target="_blank" aria-label="WhatsApp">
+        <!-- Inline WhatsApp SVG icon -->
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="28" height="28" fill="#075E54" aria-hidden="true">
+            <path d="M20.52 3.48A11.9 11.9 0 0012 .5C6.21.5 1.5 5.21 1.5 11c0 1.93.5 3.76 1.44 5.36L.5 23.5l7.42-2.03A11.9 11.9 0 0012 22.5c5.79 0 10.5-4.71 10.5-10.5 0-3.01-1.18-5.82-3.98-8.52zM12 20.5c-1.6 0-3.17-.4-4.55-1.16l-.33-.18-4.41 1.2 1.2-4.3-.14-.36A8.5 8.5 0 113.5 11 8.47 8.47 0 0012 19.5z"/>
+            <path d="M17.7 14.1c-.3-.15-1.76-.86-2.03-.96s-.47-.15-.67.15-.77.96-.95 1.16-.35.23-.65.08a8.04 8.04 0 01-2.38-1.47c-.88-.86-1.48-1.93-1.65-2.13s-.02-.32.12-.46c.12-.12.27-.31.41-.47.14-.16.19-.27.28-.45.09-.18 0-.34-.02-.48s-.67-1.66-.92-2.28c-.24-.61-.49-.53-.67-.54-.17-.01-.37-.01-.57-.01s-.48.07-.73.34c-.25.27-.96.94-.96 2.29s.98 2.66 1.12 2.85c.14.19 1.94 2.95 4.7 4.13 3.27 1.36 3.27 0 3.86-.03.59-.03 1.98-.8 2.26-1.57.28-.77.28-1.44.2-1.58-.08-.14-.27-.22-.57-.37z" fill="#fff"/>
+        </svg>
+    </a>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <!-- background video; poster used as fallback image -->
+        <video autoplay muted loop playsinline preload="auto" class="hero-video" poster="assets/images/hero-poster.jpg">
+            <source src="assets/videos/video.webm" type="video/webm">
+            <source src="assets/videos/hv2.mp4" type="video/mp4">
+            <!-- fallback for very old browsers -->
+            Sorry, your browser doesn’t support the video tag. <img src="assets/images/hero-poster.jpg" alt="Hero background">
+        </video>
+        <!-- <div class="hero-overlay"></div> -->
+        <div class="hero-content">
+            <!-- <h1 class="hero-headline">Luxury Events. Seamlessly Executed.</h1>
+            <p class="hero-subtext">We handle the pressure. You own the spotlight.</p> -->
+            <a href="#event-builder" class="cta-button hero-cta">Plan Your Event</a>
+        </div>
+    </section>
+
+    <!-- Authority Section -->
+    <section id="authority" class="authority">
+        <h2 class="authority-headline">Trusted by Industry Leaders</h2>
+        <div class="authority-logos">
+            <!-- Horizontal scroll container -->
+            <div class="logos-wrapper">
+                <a href="https://www.google.com" target="_blank" rel="noopener noreferrer"><img src="assets/img/R.png" alt="Google"></a>
+                <a href="https://www.microsoft.com" target="_blank" rel="noopener noreferrer"><img src="assets/img/microsoft-icon-logo-symbol-free-png.webp" alt="Microsoft"></a>
+                <a href="https://www.airbnb.com" target="_blank" rel="noopener noreferrer"><img src="assets/img/OIP.webp" alt="Airbnb"></a>
+                <a href="https://www.apple.com" target="_blank" rel="noopener noreferrer"><img src="assets/img/apple.jfif" alt="Apple"></a>
+                <!-- Repeat for infinite scroll if needed -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Showcase -->
+    <section id="services" class="services">
+        <div class="services-grid">
+            <a class="service-item" href="weddings.html">
+                <img src="assets/img/weddings.png" alt="Weddings" loading="lazy">
+                <div class="service-overlay-gold"></div>
+                <div class="service-text"><h3>Weddings</h3></div>
+            </a>
+            <a class="service-item" href="corparte.html">
+                <img src="assets/img/corp.png" alt="Corporate" loading="lazy">
+                <div class="service-overlay-gold"></div>
+                <div class="service-text"><h3>Corporate</h3></div>
+            </a>
+            <a class="service-item" href="private-celebrations.html">
+                <img src="assets/img/bd.png" alt="Private Celebrations" loading="lazy">
+                <div class="service-overlay-gold"></div>
+                <div class="service-text"><h3>Private Celebrations</h3></div>
+            </a>
+            <a class="service-item" href="high-profile-events.html">
+                <img src="assets/img/plp.png" alt="High-Profile Events" loading="lazy">
+                <div class="service-overlay-gold"></div>
+                <div class="service-text"><h3>High-Profile Events</h3></div>
+            </a>
+            <a class="service-item" href="design.html">
+                <img src="assets/img/13.png" alt="Design" loading="lazy">
+                <div class="service-overlay-gold"></div>
+                <div class="service-text"><h3>Design</h3></div>
+            </a>
+            <a class="service-item" href="catering.html">
+                <img src="assets/img/catering.png" alt="Catering" loading="lazy">
+                <div class="service-overlay-gold"></div>
+                <div class="service-text"><h3>Catering</h3></div>
+            </a>
+            <a class="service-item" href="logistics.html">
+                <img src="assets/img/log.webp" alt="Logistics" loading="lazy">
+                <div class="service-overlay-gold"></div>
+                <div class="service-text"><h3>Logistics</h3></div>
+            </a>
+            <a class="service-item" href="entertainment.html">
+                <img src="assets/img/enter.png" alt="Entertainment" loading="lazy">
+                <div class="service-overlay-gold"></div>
+                <div class="service-text"><h3>Entertainment</h3></div>
+            </a>
+            <a class="service-item" href="floral.html">
+                <img src="assets/img/floral.png" alt="Floral" loading="lazy">
+                <div class="service-overlay-gold"></div>
+                <div class="service-text"><h3>Floral</h3></div>
+            </a>
+            <a class="service-item" href="av-sound.html">
+                <img src="assets/img/av.png" alt="AV & Sound" loading="lazy">
+                <div class="service-overlay-gold"></div>
+                <div class="service-text"><h3>AV & Sound</h3></div>
+            </a>
+            <a class="service-item" href="venue-sourcing.html">
+                <img src="assets/img/venue.png" alt="Venue Sourcing" loading="lazy">
+                <div class="service-overlay-gold"></div>
+                <div class="service-text"><h3>Venue Sourcing</h3></div>
+            </a>
+            <a class="service-item" href="invitations.html">
+                <img src="assets/img/invitations.png" alt="Invitations" loading="lazy">
+                <div class="service-overlay-gold"></div>
+                <div class="service-text"><h3>Invitations</h3></div>
+            </a>
+            <a class="service-item" href="photography.html">
+                <img src="assets/img/photo.png" alt="Photography" loading="lazy">
+                <div class="service-overlay-gold"></div>
+                <div class="service-text"><h3>Photography</h3></div>
+            </a>
+            <a class="service-item" href="videography.html">
+                <img src="assets/img/video.png" alt="Videography" loading="lazy">
+                <div class="service-overlay-gold"></div>
+                <div class="service-text"><h3>Videography</h3></div>
+            </a>
+            <a class="service-item" href="decoration.html">
+                <img src="assets/img/6.webp" alt="Decoration" loading="lazy">
+                <div class="service-overlay-gold"></div>
+                <div class="service-text"><h3>Decoration</h3></div>
+            </a>
+            <a class="service-item" href="staffing.html">
+                <img src="assets/img/staff.png" alt="Staffing" loading="lazy">
+                <div class="service-overlay-gold"></div>
+                <div class="service-text"><h3>Staffing</h3></div>
+            </a>
+            <a class="service-item" href="security.html">
+                <img src="assets/img/6.5.webp" alt="Security" loading="lazy">
+                <div class="service-overlay-gold"></div>
+                <div class="service-text"><h3>Security</h3></div>
+            </a>
+            <a class="service-item" href="consultation.html">
+                <img src="assets/img/7.webp" alt="Consultation" loading="lazy">
+                <div class="service-overlay-gold"></div>
+                <div class="service-text"><h3>Consultation</h3></div>
+            </a>
+        </div>
+    </section>
+
+    <!-- informational alternating blocks -->
+    <section id="info" class="info-section">
+        <div class="info-block">
+            <div class="info-image frame video-frame">
+                 <video autoplay muted loop playsinline loading="lazy">
+                <source src="assets/videos/4.mp4" type="video/mp4">
+            </video>
+            </div>
+            <div class="info-text">
+                <h3>Creating Unforgettable Moments</h3>
+                <p>At Events by Kariuki, we turn dreams into reality. Our passion for luxury event planning ensures every detail is perfected, delivering experiences that linger long after the music stops.</p>
+            </div>
+        </div>
+        <div class="info-block reverse">
+            <div class="info-image frame">
+                <img src="assets/img/kiki.png" alt="Expert team">
+            </div>
+            <div class="info-text">
+                <h3>Dedicated Expertise</h3>
+                <p>From intimate gatherings to grand productions, our seasoned team handles every element – design, logistics, and coordination – with professionalism and grace.</p>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- Event Builder -->
+    <section id="event-builder" class="event-builder">
+        <h2 class="builder-headline">Plan an Event</h2>
+        <form id="builder-form">
+            <!-- hidden storage -->
+            <input type="hidden" name="event_type">
+            <input type="hidden" name="guests">
+            <input type="hidden" name="location">
+
+            <div class="step" data-step="1">
+                <h3>Choose Your Event</h3>
+                <div class="options">
+                    <button type="button" class="option-btn" data-value="wedding">Wedding</button>
+                    <button type="button" class="option-btn" data-value="corporate">Corporate</button>
+                    <button type="button" class="option-btn" data-value="birthday">Birthday</button>
+                    <button type="button" class="option-btn" data-value="high-profile">High-Profile</button>
+                </div>
+                <button type="button" class="next-btn cta-button">Next</button>
+            </div>
+            <div class="step" data-step="2">
+                <h3>How Many People?</h3>
+                <div class="options">
+                    <button type="button" class="option-btn" data-value="1-50">1–50</button>
+                    <button type="button" class="option-btn" data-value="51-200">51–200</button>
+                    <button type="button" class="option-btn" data-value="201-500">201–500</button>
+                    <button type="button" class="option-btn" data-value="500+">500+</button>
+                </div>
+                <button type="button" class="prev-btn cta-button">Back</button>
+                <button type="button" class="next-btn cta-button">Next</button>
+            </div>
+            <div class="step" data-step="3">
+                <h3>Choose Location</h3>
+                <div class="options">
+                    <button type="button" class="option-btn" data-value="nairobi">Nairobi</button>
+                    <button type="button" class="option-btn" data-value="mombasa">Mombasa</button>
+                    <button type="button" class="option-btn" data-value="kisumu">Kisumu</button>
+                    <button type="button" class="option-btn" data-value="other">Other</button>
+                </div>
+                <button type="button" class="prev-btn cta-button">Back</button>
+                <button type="button" class="next-btn cta-button">Next</button>
+            </div>
+            <div class="step" data-step="4">
+                <h3>Contact Info</h3>
+                <input type="text" name="name" placeholder="Name" required>
+                <input type="email" name="email" placeholder="Email" required>
+                <input type="tel" name="phone" placeholder="Phone" required>
+                <button type="button" class="prev-btn cta-button">Back</button>
+                <button type="submit" class="submit-btn cta-button">Submit</button>
+            </div>
+            <div class="final-step">
+                <p>Thanks! We'll be in touch shortly.</p>
+            </div>
+        </form>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="testimonials">
+        <h2 class="testimonials-headline">Excellence isn’t claimed. It’s experienced.</h2>
+        <div class="testimonials-container" id="testimonialsContainer">
+            <div class="testimonial-card">
+                <img src="assets/img/apple.jfif" alt="Client A">
+                <div class="stars">★★★★★</div>
+                <p class="testimonial-text">"Flawless execution from start to finish."</p>
+                <cite>- Client A</cite>
+            </div>
+            <div class="testimonial-card">
+                <img src="assets/img/apple.jfif" alt="Client B">
+                <div class="stars">★★★★★</div>
+                <p class="testimonial-text">"A truly cinematic experience."</p>
+                <cite>- Client B</cite>
+            </div>
+            <div class="testimonial-card">
+                <img src="assets/img/apple.jfif" alt="Client B">
+                <div class="stars">★★★★★</div>
+                <p class="testimonial-text">"A truly cinematic experience."</p>
+                <cite>- Client B</cite>
+            </div>
+            <div class="testimonial-card">
+                <img src="assets/img/apple.jfif" alt="Client B">
+                <div class="stars">★★★★★</div>
+                <p class="testimonial-text">"A truly cinematic experience."</p>
+                <cite>- Client B</cite>
+            </div>
+            <div class="testimonial-card">
+                <img src="assets/img/apple.jfif" alt="Client B">
+                <div class="stars">★★★★★</div>
+                <p class="testimonial-text">"A truly cinematic experience."</p>
+                <cite>- Client B</cite>
+            </div>
+            <div class="testimonial-card">
+                <img src="assets/img/apple.jfif" alt="Client B">
+                <div class="stars">★★★★★</div>
+                <p class="testimonial-text">"A truly cinematic experience."</p>
+                <cite>- Client B</cite>
+            </div>
+            <div class="testimonial-card">
+                <img src="assets/img/apple.jfif" alt="Client B">
+                <div class="stars">★★★★★</div>
+                <p class="testimonial-text">"A truly cinematic experience."</p>
+                <cite>- Client B</cite>
+            </div>
+            <div class="testimonial-card">
+                <img src="assets/img/apple.jfif" alt="Client B">
+                <div class="stars">★★★★★</div>
+                <p class="testimonial-text">"A truly cinematic experience."</p>
+                <cite>- Client B</cite>
+            </div>
+            <!-- Additional testimonial cards -->
+        </div>
+    </section>
+
+    <!-- Behind the Scenes -->
+    <section id="behind-scenes" class="behind-scenes">
+        <h2 class="behind-headline">Perfection is engineered.</h2>
+        <div class="scenes-grid">
+            <video autoplay muted loop playsinline loading="lazy">
+                <source src="assets/videos/1.mp4" type="video/mp4">
+            </video>
+            <video autoplay muted loop playsinline loading="lazy">
+                <source src="assets/videos/2.mp4" type="video/mp4">
+            </video>
+            <!-- Add more -->
+        </div>
+    </section>
+
+    <!-- Scarcity Close -->
+    <section id="scarcity" class="scarcity">
+        <p>We accept a limited number of events each month to ensure flawless execution.</p>
+        <a href="#event-builder" class="cta-button">Secure Your Date</a>
+    </section>
+
+      <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">EVENTS BY KARIUKI</div>
+            <div class="footer-links">
+                <a href="#about">About us</a>
+                <a href="#services">Work</a>
+                <a href="#services">Services</a>
+                <a href="#leadership">Leadership</a>
+                <a href="#legal">Legal</a>
+                <a href="#privacy">UK Privacy Policy</a>
+                <a href="#careers">Careers</a>
+                <a href="#contact">Contact us</a>
+            </div>
+            <div class="footer-bottom">
+                <span>&copy; 2026 Events by Kariuki. All rights reserved.</span>
+                <div>Follow us on social</div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JS Scripts -->
+    <script src="script.js" defer></script>
+    <script src="js/animations.js" defer></script>
+</body>
+</html>
